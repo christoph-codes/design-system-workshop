@@ -1,0 +1,21 @@
+
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Image from ".";
+import sampleImage from "./sampleImage.jpeg";
+
+
+<Meta title="Components/Image" />
+
+## Image
+
+
+<Canvas>
+  <Story name="Default">
+    <Image src={sampleImage}/>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Image} />
