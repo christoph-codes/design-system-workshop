@@ -1,0 +1,17 @@
+import { Meta, ColorItem  } from '@storybook/addon-docs';
+
+import { spacing } from './tokens';
+
+import {SpaceBlock} from './stories.helpers.js';
+
+<Meta title="Spacing" />
+
+# Spacing System
+
+<p>The foundational spacing for our project.</p>
+
+<>
+{Object.entries(spacing).map(([name, value]) => {
+   return <SpaceBlock key={name} size={value} />
+})}
+</>

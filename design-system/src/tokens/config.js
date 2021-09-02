@@ -50,6 +50,13 @@ module.exports = {
             return path[0] === "sizes";
           },
         },
+        {
+          destination: "spacing.js",
+          format: "javascript/es6",
+          filter: ({path}) => {
+            return path[0] === "spacing";
+          },
+        },
       ],
     },
   },
