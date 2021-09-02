@@ -54,6 +54,10 @@
       "fileName": "/home/runner/work/design-system-workshop/design-system-workshop/design-system/src/intro.stories.mdx",
       "framework": "react"
     },
+    "Sizes": {
+      "fileName": "/home/runner/work/design-system-workshop/design-system-workshop/design-system/src/sizes.stories.mdx",
+      "framework": "react"
+    },
     "Typography": {
       "fileName": "/home/runner/work/design-system-workshop/design-system-workshop/design-system/src/typography.stories.mdx",
       "framework": "react"
@@ -276,6 +280,16 @@
       "parameters": {
         "docsOnly": true,
         "__id": "intro--page"
+      }
+    },
+    "sizes--page": {
+      "id": "sizes--page",
+      "name": "Page",
+      "kind": "Sizes",
+      "story": "Page",
+      "parameters": {
+        "docsOnly": true,
+        "__id": "sizes--page"
       }
     },
     "typography--page": {
