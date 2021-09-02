@@ -1,0 +1,15 @@
+import { Meta, ColorItem,  } from '@storybook/addon-docs';
+
+import { sizes } from './tokens';
+
+import {SizeBlock} from './stories.helpers.js';
+
+<Meta title="Sizes" />
+
+# Sizes
+
+<>
+{Object.entries(sizes).map(([name, value]) => {
+   return <SizeBlock key={name} size={value} />
+})}
+</>

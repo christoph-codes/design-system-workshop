@@ -30,8 +30,8 @@ module.exports = {
         {
           destination: "typography.js",
           format: "javascript/es6",
-          filter: function (prop) {
-            return prop.path[0] === "font";
+          filter: ({path}) => {
+            return path[0] === "font";
           },
         },
         /* Filter and extract color tokens*/
@@ -40,6 +40,14 @@ module.exports = {
           format: "javascript/es6",
           filter: {
             type: "color",
+          },
+        },
+        {
+          destination: "sizes.js",
+          format: "javascript/es6",
+          filter: ({path}) => {
+            console.log('Path: ',path);
+            return path[0] === "sizes";
           },
         },
       ],
